@@ -148,7 +148,7 @@ def zeropoirec(data, user_data, poi_data):
     cnt = 0
     k_list = []
     
-    for i in tqdm(uid_list[:44]):
+    for i in tqdm(uid_list[:]):
         
         # make user's log and candidates list
         user_log = make_user_log(data, user_data, i, poi_data, cnt)
