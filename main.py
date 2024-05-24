@@ -22,23 +22,12 @@ def main():
         print("Run Cmd: python main.py data")
         print("\nParamters -----------------------------------------------------------")
         print("1. data: {Yelp, NYC, Tokyo}")
-        # print("7. log_dir: log directory to save training loss/acc and test loss/acc")
+        
         sys.exit(-1)
 
     # For user parameters
     data = sys.argv[1]
-    # log_dir = sys.argv[7]
-
-    # Data read
-    # datapath = str(Path(os.path.dirname((os.path.abspath(__file__))))) + "/dataset/" + data
-    # if os.path.exists(datapath):
-    #     print("Dataset exists in ", datapath)
-    # else:
-    #     print("Dataset doen't exist in ", datapath, ", please downloads and locates the data.")
-    #     sys.exit(-1)
-
-    # Parameters for data reading
-    # channel = 3
+    
     if data == "Yelp":
         user_data = pd.read_csv('./datasets/preprocessed_yelp_100.csv')
         poi_data = pd.read_csv('./datasets/business_info_yelp.csv')
@@ -64,7 +53,6 @@ def main():
     
     # start recommend
     zeropoirec.zeropoirec(data, user_data, poi_data)
-    # selfie(gpu_id, input_reader, model_name, total_epochs, batch_size, lr_boundaries, lr_values, optimizer, noise_rate, noise_type, warm_up, threshold, queue_size, restart=restart, log_dir=log_dir)
 
 if __name__ == '__main__':
     print(sys.argv)
