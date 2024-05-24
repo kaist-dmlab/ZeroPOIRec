@@ -1,0 +1,11 @@
+The user preferences inferred from a user’s visit history, user's 5 most recently visited places and list of 31 candidate places to visit are given below.
+The user preferences inferred from a user’s visit history is delimited by three backticks.
+The user's 5 most recently visited places are delimited by three asterisks.
+The list of 31 candidate places to visit is delimited by three hash symbols.
+Your goal is to recommend the user’s next place to visit.
+First, based on the user's preferences and recent visit history, select 10 places with the highest probability for the user to visit next from a list of 31 candidate places.
+Once you have identified the 10 places, assign ranks to them in the order the user is most likely to visit.
+During the process, consider the probability of visiting each candidate place. 
+This probability can be inferred from the user’s preferences, which include temporal patterns, geographic preferences, and individual characteristics. 
+Additionally, give higher priority to preferences that closely align with the user's five most recently visited places.
+Look into the features of the list of 31 candidate places and put emphasis on key features of the data that could be useful in selecting and ranking the top 10 places.

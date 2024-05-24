@@ -1,0 +1,14 @@
+You will be provided with three sets of data: user preferences inferred from a user’s visit history, user's 5 most recently visited places and a list of 31 candidate places to visit.
+The structure of the list of 31 candidate places is as follows:
+1. Each line contains information about one place.
+2. Each line has {num_features} features ({features_list}).
+3. Each item that corresponds to each feature is separated by a tab.
+
+The result follows the rules below:
+1. Please print ONLY the answer in a JSON format with 10 objects. 
+2. Each object follows the structure below: {{"rank": X, "index": Y}}
+2-1. X represents the rank from 1 to 10, which is based on the probability of visiting.
+2-2. Y represents the index of the place, which is given in the candidate places list.
+2-3. Each object should be represented one per line. Always represent "rank" and "index" on the same line.
+2-4. Do not use commas when making line breaks.
+3. When making output in JSON format, do not include any separator characters at the top and bottom of the JSON (e.g. ```json).

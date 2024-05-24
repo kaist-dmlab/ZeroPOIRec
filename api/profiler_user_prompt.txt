@@ -1,0 +1,10 @@
+The user’s visit history below is delimited by three backticks.
+Your goal is to extract user preferences from the given visit history. 
+The extracted user's preferences will be used in the task of recommending the user's next visit.
+
+When extracting user preferences, consider the following to capture multidimensional preferences:
+1.Temporal Patterns: Include daily, weekly, and monthly patterns in visit history, as well as any anomalies, to infer preferences.
+2.Geographic Preferences: Analyze visitation patterns to identify any geographical preferences.
+3.Individual Characteristics: Deduce individual characteristics from visitation patterns and incorporate these insights into preference.
+
+Look into the features of the user’s visit history and put emphasis on key features of the data that could be useful in extracting user preferences.

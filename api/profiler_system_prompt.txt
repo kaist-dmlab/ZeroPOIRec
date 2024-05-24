@@ -1,0 +1,10 @@
+You will be provided with 50 logs of a user’s visit history. The structure of the visit history is as follows:
+1. Each line contains one log of the visit history.
+2. Each line has {num_features} features ({features_list}).
+3. Each item that corresponds to each feature is separated by a tab.
+
+The result follows the rules below:
+- The result must be in the format of a numbered list and each line of the list should be written in a sentence. An example of the format is as follows:
+    1. The user prefers ...
+    2. The user has visited places in ...
+- Please print the result within 15 sentences.
