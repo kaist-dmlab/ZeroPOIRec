@@ -13,8 +13,6 @@ import re
 from api.profiler_api import *
 from api.recommender_api import *
 from api.api_key import *
-# import profiler_api
-# import api_key
 
 
 from tqdm import tqdm
