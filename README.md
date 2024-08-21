@@ -1,25 +1,25 @@
 # ZeroPOIRec : Large Language Models are Zero-shot Point-of-Interest Recommenders
 
-> Under Review on CIKM 2024
+> Under Review on KDD 2025 Applied Data Science Track
 
 
 ## 1. Overview
 
-With the increasing emphasis on privacy preservation, there is a shift towards zero-shot recommendation approaches that prioritize individual user preferences inferred from their visit history. Recently, the ability of pre-trained large language models(LLMs) to understand human behavior has emerged as an alternative to zero-shot recommendations. Accordingly, we propose a novel zero-shot recommendation system using LLMs, called ZeroPOIRec, that involves a _profiler prompt_ that enables LLMs to extract individual user preferences and a _recommender prompt_ that facilitates the zero-shot POI recommendation performance. 
+With the increasing emphasis on privacy preservation, there is a shift towards zero-shot recommendation approaches that prioritize individual user preferences inferred from their visit history. Recently, the ability of pre-trained large language models(LLMs) to understand human behavior has emerged as an alternative to zero-shot recommendations. Accordingly, we propose a novel zero-shot recommendation system using LLMs, called ZeroPOIRec, that involves a _profiler module_ that enables LLMs to extract individual user preferences and a _recommender module_ that facilitates the zero-shot POI recommendation performance. 
 
 <p align="center">
-<img src="figures/overall_figure.png " width="850"> 
+<img src="figures/overall_figure_new.png " width="850"> 
 </p>
 
-Generating(Extracting) user's preferences for POI recommendation faces several challenges due to the unique characteristics of location data and user behavior. Unlike other domains such as movies and news, a _visit_ includes the time of visit and geographical location, which introduce complex and diverse factors affecting subsequent visit locations. Consequently, recommendations for POIs must reflect the temporal patterns of users, varying by time, day, and season. Additionally, capturing geographic preferences related to users' residential or workplace locations and considering proximity in recommendations are necessary. Insights derived from users' visit types and behavioral patterns can often infer individual characteristics, which are closely linked to predicting subsequent visit locations. Therefore, capturing these complex and dynamic preferences is essential for POI recommendation.
+Generating(Extracting) user's profile for POI recommendation faces several challenges due to the unique characteristics of location data and user behavior. Unlike other domains such as movies and news, a _visit_ includes the time of visit and geographical location, which introduce complex and diverse factors affecting subsequent visit locations. Consequently, recommendations for POIs must reflect the temporal patterns of users, varying by time, day, and season. Additionally, capturing geographic mobility related to users' residential or workplace locations and considering proximity in recommendations are necessary. Insights derived from users' visit types and behavioral patterns can often infer individual characteristics, which are closely linked to predicting subsequent visit locations. Therefore, capturing these complex and dynamic preferences is essential for POI recommendation.
 
 <p align="center">
-<img src="figures/intro.png " width="500"> 
+<img src="figures/intro_new.png " width="500"> 
 </p>
 
 ## 2. Prompts
 
-We designed two prompts. A _profiler prompt_ enables LLMs to extract individual user preferences, and a _recommender prompt_ facilitates the zero-shot POI recommendation performance. 
+We designed two prompts for each module. A _profiler module_ enables LLMs to extract individual user preferences, and a _recommender module_ facilitates the zero-shot POI recommendation performance. 
 
 ### 2-1. Profiler Prompt
 
