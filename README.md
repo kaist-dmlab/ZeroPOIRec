@@ -1,6 +1,6 @@
 # ZeroPOIRec : Large Language Models are Zero-shot Point-of-Interest Recommenders
 
-> Under Review on KDD 2025 Applied Data Science Track
+> Under Review on ARR 2025 October (Long Paper)
 
 
 ## 1. Overview
