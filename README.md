@@ -1,6 +1,6 @@
 # ZeroPOIRec : Large Language Models are Zero-shot Point-of-Interest Recommenders
 
-> Under Review on ECML PKDD 2025 Journal Track - Data Mining and Knowledge Discovery
+> ECML PKDD 2025 Journal Track - Data Mining and Knowledge Discovery
 
 
 ## 1. Overview
